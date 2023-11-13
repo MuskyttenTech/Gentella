@@ -124,8 +124,9 @@ const LineChart = ({ drawerWidth }) => {
           sx={{
             border: "1px solid #ccc",
             cursor: "pointer",
-            margin: "05px 5px",
+            margin: "09px 11px",
             background: "#fff",
+           
           }}
         >
           <Button onClick={toggleCalendar}>
@@ -136,13 +137,13 @@ const LineChart = ({ drawerWidth }) => {
           </Button>
         </Box>
 
-        {showCalendar && (
+        {/* {showCalendar && (
           <CustomCalendar
             isVisible={showCalendar}
             onClose={() => setShowCalendar(false)}
             onSelectDates={(ranges) => setSelectedDates(ranges)}
           />
-        )}
+        )} */}
       </Box>
       <Grid container sx={{ display: "flex" ,padding:"5px"}}>
       <Grid item md={12} lg={9} sx={{ height: "280px", paddingRight: "20px" }}>

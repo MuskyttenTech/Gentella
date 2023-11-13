@@ -28,20 +28,19 @@ const AppVersion = () => {
   return (
     <Box >
       <Box
-        sx={{ width: "100%", marginBottom: 1 }}
+        sx={{ padding: "3px 6px 3px 8px" }}
         display="flex"
         justifyContent="space-between"
         alignItems="center"
-        height="70px"
       >
-        <Box sx={{ paddingTop: 2, marginLeft:5, width: "50%" }}>
+        <Box sx={{ marginLeft: "16px" }}>
           <Typography
             sx={{
               fontFamily: "Helvetica Neue",
               fontSize: "1.50rem",
               fontWeight: "normal",
               color: "#73879C",
-              
+
             }}
             // gutterBottom
             variant="h6"
@@ -51,29 +50,29 @@ const AppVersion = () => {
         </Box>
         <Box
           sx={{
-            width: "15%",
+            // width: "15%",
             marginRight: 2,
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
           }}
         >
-<KeyboardArrowUpIcon sx={{ fontSize: "25px", fontWeight: "900", color: "#73879C", padding: "2px" }} />
-<BuildIcon sx={{ fontSize: "20px", color: "#D0D0D0", transform: "rotate(95deg)", padding: "2px" }} />
-<CloseIcon sx={{ fontSize: "20px", color: "#73879C", padding: "2px" }} />
+          <KeyboardArrowUpIcon sx={{ fontSize: "25px", fontWeight: "900", color: "#73879C", padding: "2px" }} />
+          <BuildIcon sx={{ fontSize: "20px", color: "#D0D0D0", transform: "rotate(95deg)", padding: "2px" }} />
+          <CloseIcon sx={{ fontSize: "20px", color: "#73879C", padding: "2px" }} />
 
         </Box>
       </Box>
       <Divider variant="middle" sx={{ width: "90%", bgcolor: "#D0D0D0" }} />
 
-      <Box sx={{ padding: "9px" }}>
-        <Typography sx={{ fontSize: "16px",fontWeight:'500',color:'#73879C', padding: "1px", fontFamily: "Helvetica Neue",marginLeft:1 }}>
+      <Box sx={{ padding: "9px", height: "260px" }}>
+        <Typography sx={{ fontSize: "16px", fontWeight: '500', color: '#73879C', padding: "1px", fontFamily: "Helvetica Neue", marginLeft: 1 }}>
           App Usage across versions
         </Typography>
         {versions.map((version, index) => (
           <Box key={index} display="flex" alignItems="center" marginTop="10px" height={30} >
             <Typography fontSize="13px" paddingLeft={1} color={"#73879C"} fontFamily={"Helvetica Neue"}>{version.left}</Typography>
-           
+
             <LinearProgress
               variant="determinate"
               value={progressValues[index]}
@@ -90,13 +89,8 @@ const AppVersion = () => {
                 },
               }}
             />
-            
-            
-            
-            <Typography fontSize="20px" paddingRight={3} color={"#73879C"} fontFamily={"Helvetica Neue"}>{version.right}</Typography>
-
-           
-          </Box>
+           <Typography fontSize="20px" paddingRight={3} color={"#73879C"} fontFamily={"Helvetica Neue"}>{version.right}</Typography>
+           </Box>
         ))}
       </Box>
     </Box>

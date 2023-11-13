@@ -103,12 +103,12 @@ const DoughnutChart = () => {
   return (
     <Box>
       <Box
-        sx={{ width: "100%", marginBottom: 1 }}
+        sx={{padding:"3px 6px 3px 8px" }}
         display="flex"
         justifyContent="space-between"
         alignItems="center"
       >
-        <Box sx={{ paddingTop: 2, marginLeft: 3, width: "50%" }}>
+        <Box sx={{ marginLeft:"16px" }}>
           <Typography
             sx={{
               fontFamily: "Helvetica Neue",
@@ -125,7 +125,7 @@ const DoughnutChart = () => {
           </Typography>
         </Box>
         <Box
-          sx={{ width: "15%", marginRight: 2 }}
+         sx={{ marginRight: 2 }}
           display="flex"
           justifyContent="space-between"
           alignItems="center"
@@ -149,7 +149,7 @@ const DoughnutChart = () => {
       <Box sx={{ width: "100%", height: "260px" }} display="flex" align-items="center">
         <Box sx={{ marginLeft: 2, width: "60.5%", padding: 2 }}>
           <Box
-            sx={{ width: "90%" }}
+            sx={{ width: "70%" }}
             display="flex"
             justifyContent="space-between"
             alignItems="center"
@@ -183,15 +183,15 @@ const DoughnutChart = () => {
             </Typography>
           </Box>
          <div style={{marginBottom:'25px'}}>
-          <canvas id="myChart" ref={chartRef} style={{ width: "100%", minHeight: "250px"}} />
+          <canvas id="myChart" ref={chartRef} style={{ width: "100%"}} />
           </div>
         </Box>
         <Box
           sx={{
-            width: "10%",
-            padding: 2,
-            marginLeft: 5,
-            marginRight: 2,
+            // width: "10%",
+            padding: "16px",
+            // marginLeft: 5,
+            // marginRight: 2,
           }}
           display="flex"
           flexDirection="column"  // Change to column layout
@@ -217,10 +217,10 @@ const DoughnutChart = () => {
               justifyContent="center"
               alignItems="center"
               spacing={1.2}
-              marginTop={2}
+              style={{padding:'21px 0px 0px 0px '}}
             >
               {["30%", "10%", "20%", "15%", "30%"].map((label, index) => (
-                <Grid item key={index}>
+                <Grid item key={index} style={{paddingTop:'4.6px'}}>
                   <Typography
                     sx={{
                       fontFamily: "Helvetica Neue",

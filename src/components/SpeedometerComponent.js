@@ -7,7 +7,7 @@ const SpeedometerComponent = () => {
     <div>
       <ReactSpeedometer
         maxValue={100}
-        width={140}
+        width={130}
         ringWidth={27}
         value={50}
         needleTransitionDuration={3333}

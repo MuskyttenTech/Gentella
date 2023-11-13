@@ -30,12 +30,12 @@ const QuickSettings = () => {
   return (
     <Box>
       <Box
-        sx={{ marginBottom: 1 }}
+        sx={{padding:"3px 6px 3px 8px" }}
         display="flex"
         justifyContent="space-between"
         alignItems="center"
       >
-        <Box sx={{ paddingTop: 2, marginLeft: 3, width: "50%" }}>
+        <Box sx={{ marginLeft:"16px" }}>
           <Typography
             sx={{
               fontFamily: "Helvetica Neue",
@@ -52,7 +52,7 @@ const QuickSettings = () => {
           </Typography>
         </Box>
         <Box
-          sx={{ width: "15%", marginRight: 2 }}
+         sx={{ marginRight: 2 }}
           display="flex"
           justifyContent="space-between"
           alignItems="center"
@@ -77,7 +77,7 @@ const QuickSettings = () => {
 
 
       <Box display="flex" sx={{ paddingLeft: "20px" }}>
-        <List sx={{ bgcolor: "background.paper", height: '260px', width: '200px' }}>
+        <List sx={{ bgcolor: "background.paper", height: '260px',padding:"21px" }}>
           {[
             "Settings",
             "Subscription",
@@ -90,7 +90,7 @@ const QuickSettings = () => {
             <ListItem
               key={text}
               disablePadding
-              sx={{ display: "flex", paddingRight: 2,marginTop:1.5 }}
+              sx={{ display: "flex", padding:"0px 0px 6px 0px" }}
             >
               <ListItemIcon>
                 {React.createElement(iconList[index % iconList.length], {
@@ -121,7 +121,7 @@ const QuickSettings = () => {
             marginLeft: '20px',
             padding: '10px',
             height: '160px',  
-            marginTop:'10px' ,
+            marginTop:'35px' ,
             marginRight:'20px'
           }}
         >
