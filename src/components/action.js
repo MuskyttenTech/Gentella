@@ -67,7 +67,6 @@ export const fetchData = () => {
 
     try {
       const chartDataResponse = await axios.get('https://6551b1c45c69a779032901ee.mockapi.io/Linechart');
-      console.log("sss",chartDataResponse.data[0].datasets[1].label)
       const mockChartData = {
         labels: chartDataResponse.data[0].labels,
         datasets: [
@@ -116,7 +115,6 @@ export const fetchDoughnutChartData = () => {
   
       try {
         const DoughnutDataResponse = await axios.get('https://6551b1c45c69a779032901ee.mockapi.io/DoughnutChartData');
-        console.log("ssddds",DoughnutDataResponse.data[0].data)
         setTimeout(() => {
           const mockData = {
             labels: DoughnutDataResponse.data[0].labels,

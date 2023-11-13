@@ -109,8 +109,6 @@ const SectionWithDivider = ({
               color:'#73879C',
               whiteSpace: "nowrap",
             }}
-            // variant="h6"
-            // gutterBottom
             component="div"
             color="text.disabled"
             
@@ -128,8 +126,6 @@ const SectionWithDivider = ({
               color: value === "2,500" ? "#20c997" : color,
               whiteSpace: "nowrap",
             }}
-            // variant="h1"
-            // gutterBottom
             component="div"
           >
             {value}

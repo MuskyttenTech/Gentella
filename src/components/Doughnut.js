@@ -70,7 +70,6 @@ const DoughnutChart = () => {
               boxWidth: 15,
               padding: 20,
               fontFamily: " Helvetica Neue, sans-serif",
-              // fontSize: "15px",
             },
           },
           tooltip: {
@@ -82,8 +81,6 @@ const DoughnutChart = () => {
                 const dataIndex = context.dataIndex;
                 const label = chartData.labels[dataIndex];
                 const value = chartData.datasets[0].data[dataIndex];
-                console.log(label);
-                console.log(value);
                 return `${label}: ${value}`;
               },
             },
@@ -117,7 +114,6 @@ const DoughnutChart = () => {
               color: "#73879C",
 
             }}
-            // gutterBottom
             variant="h6"
             component="div"
           >
@@ -188,10 +184,7 @@ const DoughnutChart = () => {
         </Box>
         <Box
           sx={{
-            // width: "10%",
             padding: "16px",
-            // marginLeft: 5,
-            // marginRight: 2,
           }}
           display="flex"
           flexDirection="column"  // Change to column layout

@@ -44,7 +44,6 @@ const QuickSettings = () => {
               color: "#73879C",
 
             }}
-            // gutterBottom
             variant="h6"
             component="div"
           >
@@ -72,9 +71,6 @@ const QuickSettings = () => {
         </Box>
       </Box>
       <Divider variant="middle" sx={{ width: "90%", bgcolor: "#D0D0D0" }} />
-
-
-
 
       <Box display="flex" sx={{ paddingLeft: "20px" }}>
         <List sx={{ bgcolor: "background.paper", height: '260px',padding:"21px" }}>
@@ -113,7 +109,6 @@ const QuickSettings = () => {
             </ListItem>
           ))}
         </List>
-
 
         <Box
           sx={{

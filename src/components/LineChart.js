@@ -137,13 +137,6 @@ const LineChart = ({ drawerWidth }) => {
           </Button>
         </Box>
 
-        {/* {showCalendar && (
-          <CustomCalendar
-            isVisible={showCalendar}
-            onClose={() => setShowCalendar(false)}
-            onSelectDates={(ranges) => setSelectedDates(ranges)}
-          />
-        )} */}
       </Box>
       <Grid container sx={{ display: "flex" ,padding:"5px"}}>
       <Grid item md={12} lg={9} sx={{ height: "280px", paddingRight: "20px" }}>
@@ -189,13 +182,12 @@ const LineChart = ({ drawerWidth }) => {
                 variant="determinate"
                 value={initialProgressValues[index]}
                 sx={{
-                  // width: "400px",
                   height: "10px",
                   mb: "15px",
                   mt:'5px',
                   marginLeft: "15px",
                   marginRight: "15px",
-                  backgroundColor: "#F5F5F5", // Background color
+                  backgroundColor: "#F5F5F5", 
                   "& .MuiLinearProgress-bar": {
                     backgroundColor: "#1ABB9C",
                   },

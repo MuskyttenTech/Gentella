@@ -71,7 +71,7 @@ function CustomCalendar({ isVisible, onClose, onSelectDates }) {
           onChange={handleOctoberDateSelection}
           theme={{
             dateRange: {
-              color: "#1a73e8", // Set your desired color
+              color: "#1a73e8", 
             },
             calendar: {
               background: "#fff",
